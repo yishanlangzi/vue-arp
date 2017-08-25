@@ -14,7 +14,7 @@
             <template slot="title">功能</template>
               <el-menu-item >
                 <div id="sdf">
-                  <sdfhod></sdfhod>
+                  <toolbar></toolbar>
                 </div>
               </el-menu-item>
           </el-submenu>
@@ -41,12 +41,12 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import sdfhod from './toolbar.vue'
+  import toolbar from './toolbar.vue'
 
   export default {
     name: 'sdf',
     components: {
-      sdfhod
+      toolbar
     },
     data () {
       return {

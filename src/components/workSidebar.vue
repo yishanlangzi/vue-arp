@@ -5,10 +5,10 @@
       <!--<main-left></main-left>-->
       <div class="main-left-content">
         <MainLeftContentApp></MainLeftContentApp>
-        <MainLeftContentWork></MainLeftContentWork>
-        <MainLeftContentService></MainLeftContentService>
+        <!--<MainLeftContentWork></MainLeftContentWork>-->
+        <!--<MainLeftContentService></MainLeftContentService>-->
         <div class="center-footer main-left-content-footer">
-          <button class="btn btn-default" type="button" ng-click="bizCtrl.addBlock(bizCtrl.userProtaConfig.portalConfigJson,'leftDiv')">
+          <button class="btn btn-default" type="button">
             <i class="glyphicon glyphicon-plus"></i>个性配置
           </button>
         </div>
@@ -21,13 +21,37 @@
 
 <script type="text/ecmascript-6">
   import MainLeftContentApp from './MainLeftContentApp.vue'
-  import MainLeftContentWork from './MainLeftContentWork.vue'
-  import MainLeftContentService from './MainLeftContentService.vue'
+//  import MainLeftContentWork from './MainLeftContentWork.vue'
+//  import MainLeftContentService from './MainLeftContentService.vue'
   export default {
+    data () {
+      return {
+      }
+    },
+    mounted () {
+    },
+    computed: {
+    },
+    watch: {
+    },
+    methods: {
+//      function () {
+//        // GET /someUrl
+//        this.$http.get('http://localhost:8088/test').then(response => {
+//          console.log(response.data)
+//          // get body data
+//          // this.someData = response.body;
+//        }, response => {
+//          console.log('error')
+//        })
+//      }
+    },
+    created () {
+    },
     components: {
-      MainLeftContentApp,
-      MainLeftContentWork,
-      MainLeftContentService
+      MainLeftContentApp
+//      MainLeftContentWork,
+//      MainLeftContentService
     }
   }
 </script>

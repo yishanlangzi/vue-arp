@@ -3,23 +3,21 @@
     <el-col :span="24" class="header">
       <el-col :span="10" class="logo" :class="collapsed?'logo-collapse-width':'logo-width'">
         <img src="../img/desk/sytleOne/hangzhouyanjiuyuan.png" alt="ARP信息管理系统">
-        <!--{{collapsed?'':sysName}}-->
+        {{collapsed?'':sysName}}
       </el-col>
       <el-col :span="10">
-        <el-menu :default-active="activeIndex"
+        <el-menu
                  class="el-menu" mode="horizontal" @select="handleSelect">
-          <router-view></router-view>
           <el-menu-item index="1">首页</el-menu-item>
           <el-submenu index="2">
             <template slot="title">功能</template>
-              <el-menu-item >
+              <el-menu-item index="2-1">
                 <div id="sdf">
                   <toolbar></toolbar>
                 </div>
               </el-menu-item>
           </el-submenu>
           <el-menu-item index="3">消息</el-menu-item>
-
           <el-menu-item index="4">通讯录</el-menu-item>
           <el-menu-item index="5">日程</el-menu-item>
         </el-menu>
@@ -30,7 +28,7 @@
             <img src="http://172.17.0.106/seed/stoneVfs/local/common/staff/00/sm/537c1e64537ff9e5da12009f447a796e9b810ce4e3e26.jpg" /> 超级管理员
           </span>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item>我的消息</el-dropdown-item>
+            <el-dropdown-item @click="goOther('/personal')">个人中心</el-dropdown-item>
             <el-dropdown-item>设置</el-dropdown-item>
             <el-dropdown-item divided @click.native="logout">退出登录</el-dropdown-item>
           </el-dropdown-menu>
@@ -38,6 +36,7 @@
       </el-col>
     </el-col>
   </el-row>
+
 </template>
 
 <script type="text/ecmascript-6">
@@ -62,9 +61,9 @@
           delivery: false,
           type: [],
           resource: '',
-          desc: '',
-          activeIndex: '1',
-          activeIndex2: '1'
+          desc: ''
+//          activeIndex: '1',
+//          activeIndex2: '1'
         }
       }
     },
@@ -93,6 +92,12 @@
           _this.$router.push('/login')
         }).catch(() => {
 
+        })
+      },
+      goOther (pathParam) {
+        this.is_slideShow = false
+        this.$router.push({
+          path: pathParam
         })
       }
     }

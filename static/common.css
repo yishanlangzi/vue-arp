@@ -1,0 +1,10 @@
+.requried .mint-cell-wrapper .mint-cell-title .mint-cell-text:after {
+  content: "\2736";
+  color: red;
+  font-size: 8px;
+  position: absolute;
+  left: 12px;
+}
+.requried.three .mint-cell-wrapper .mint-cell-title .mint-cell-text:after {
+  left: 20px;
+}

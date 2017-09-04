@@ -1,0 +1,677 @@
+[{
+  "id": "arp-oa",
+  "name": "协同办公",
+  "iconfont": "icon-cms",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/oa",
+  "apps": [
+    {
+      "id": "arp-oa-meeting",
+      "name": "会议",
+      "iconfont": "icon-meeting",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/meeting"
+    },
+    {
+      "id": "arp-oa-car",
+      "name": "用车",
+      "iconfont": "icon-car",
+      "bgColor": "#ffc40d",
+      "appType": "file",
+      "url": "/car"
+    },
+    {
+      "id": "arp-oa-calendar",
+      "name": "日程",
+      "iconfont": "icon-calendar",
+      "bgColor": "#ffc40d",
+      "appType": "file",
+      "url": "/calendar"
+    },
+    {
+      "id": "arp-oa-news",
+      "name": "新闻",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/cms/list"
+    },
+    {
+      "id": "arp-oa-sys",
+      "name": "系统管理",
+      "iconfont": "icon-sys",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/sys/"
+    },
+    {
+      "id": "arp-oa-worklog",
+      "name": "工作日志",
+      "iconfont": "icon-worklog",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/worklog"
+    },
+    {
+      "id": "arp-oa-sys",
+      "name": "权限管理",
+      "iconfont": "icon-sys",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/power"
+    },
+    {
+      "id": "arp-oa-conPub",
+      "name": "内容发布",
+      "iconfont": "icon-conPub",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/conPub"
+    }
+  ]
+},
+{
+  "id": "arp-fm",
+  "name": "财务管理",
+  "iconfont": "icon-fm",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/fm",
+  "apps": [
+    {
+      "id": "arp-fm-loan",
+      "name": "借款管理",
+      "iconfont": "icon-loan",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/loan"
+    },
+    {
+      "id": "arp-fm-expense",
+      "name": "报销管理",
+      "iconfont": "icon-expense",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/expense"
+    },
+    {
+      "id": "arp-fm-inCome",
+      "name": "收入管理",
+      "iconfont": "icon-inCome",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/inCome"
+    },
+    {
+      "id": "arp-fm-transfer",
+      "name": "经费转拨",
+      "iconfont": "icon-transfer",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/transfer"
+    },
+    {
+      "id": "arp-fm-publicExpense",
+      "name": "公共费用分摊与计量",
+      "iconfont": "icon-publicExpense",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/publicExpense"
+    },
+    {
+      "id": "arp-fm-adjustment",
+      "name": "财务调整",
+      "iconfont": "icon-adjustment",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/adjustment"
+    },
+    {
+      "id": "arp-fm-config",
+      "name": "基础配置",
+      "iconfont": "icon-config",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/config"
+    },
+    {
+      "id": "arp-fm-config",
+      "name": "财务核算系统",
+      "iconfont": "icon-config",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/config"
+    },
+    {
+      "id": "arp-fm-finance",
+      "name": "财务审核",
+      "iconfont": "icon-finance",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/finance"
+    },
+    {
+      "id": "arp-fm-other",
+      "name": "其他业务",
+      "iconfont": "icon-other",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/fm/other"
+    }
+  ]
+},
+{
+  "id": "arp-pmo",
+  "name": "科研项目",
+  "iconfont": "icon-pmo",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/pmo",
+  "apps": [
+    {
+      "id": "arp-pmo-prj",
+      "name": "项目库",
+      "iconfont": "icon-prj",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/pmo/prj"
+    },
+    {
+      "id": "arp-pmo-guidePrj",
+      "name": "先导项目",
+      "iconfont": "icon-guidePrj",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/pmo/guidePrj"
+    },
+    {
+      "id": "arp-pmo-resPrj",
+      "name": "科研项目管理",
+      "iconfont": "icon-resPrj",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/pmo/resPrj"
+    },
+    {
+      "id": "arp-pmo-virtualprj",
+      "name": "非科研项目管理",
+      "iconfont": "icon-virtualprj",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/pmo/virtualprj"
+    },
+    {
+      "id": "arp-pmo-statisticalPrj",
+      "name": "统计报表",
+      "iconfont": "icon-statisticalPrj",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/pmo/statisticalPrj"
+    },
+    {
+      "id": "arp-pmo-projectReview",
+      "name": "评审管理",
+      "iconfont": "icon-projectReview",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/pmo/projectReview"
+    },
+    {
+      "id": "arp-pmo-achievement",
+      "name": "成果产出",
+      "iconfont": "icon-achievement",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/pmo/achievement"
+    },
+    {
+      "id": "arp-pmo-dataVerify",
+      "name": "项目数据整理",
+      "iconfont": "icon-dataVerify",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/pmo/dataVerify"
+    }
+  ]
+},
+{
+  "id": "arp-am",
+  "name": "条件保障",
+  "iconfont": "icon-am",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/am",
+  "apps": [
+    {
+      "id": "arp-am-instrumentManagement",
+      "name": "仪器管理",
+      "iconfont": "icon-instrumentManagement",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/am/instrumentManagement"
+    },
+    {
+      "id": "arp-am-fixedAssets",
+      "name": "固定资产管理",
+      "iconfont": "icon-fixedAssets",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/am/fixedAssets"
+    },
+    {
+      "id": "arp-am-secrecy",
+      "name": "保密管理",
+      "iconfont": "icon-secrecy",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/am/secrecy"
+    },
+    {
+      "id": "arp-am-material",
+      "name": "耗材管理",
+      "iconfont": "icon-material",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/am/material"
+    },
+    {
+      "id": "arp-am-intangibleAssets",
+      "name": "无形资产管理",
+      "iconfont": "icon-intangibleAssets",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/am/intangibleAssets"
+    },
+    {
+      "id": "arp-am-contract",
+      "name": "合同管理",
+      "iconfont": "icon-contract",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/am/contract"
+    },
+    {
+      "id": "arp-am-intellectual",
+      "name": "知识产权管理",
+      "iconfont": "icon-intellectual",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/am/intellectual"
+    },
+    {
+      "id": "arp-am-basic",
+      "name": "基础配置",
+      "iconfont": "icon-basic",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/am/basic"
+    }
+  ]
+},
+{
+  "id": "arp-hr",
+  "name": "人力资源",
+  "iconfont": "icon-hr",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/hr",
+  "apps": [
+    {
+      "id": "arp-hr-orgManage",
+      "name": "组织管理",
+      "iconfont": "icon-orgManage",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/orgManage"
+    },
+    {
+      "id": "arp-hr-staff",
+      "name": "人员管理",
+      "iconfont": "icon-staff",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/staff"
+    },
+    {
+      "id": "arp-hr-vacation",
+      "name": "假期管理",
+      "iconfont": "icon-vacation",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/vacation"
+    },
+    {
+      "id": "arp-hr-trip",
+      "name": "差旅管理",
+      "iconfont": "icon-trip",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/trip"
+    },
+    {
+      "id": "arp-hr-overtime",
+      "name": "加班管理",
+      "iconfont": "icon-overtime",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/overtime"
+    },
+    {
+      "id": "arp-hr-attendance",
+      "name": "考勤管理",
+      "iconfont": "icon-attendance",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/attendance"
+    },
+    {
+      "id": "arp-hr-payroll",
+      "name": "薪酬管理",
+      "iconfont": "icon-orgManage",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/payroll"
+    },
+    {
+      "id": "arp-hr-interviewManage",
+      "name": "面试管理",
+      "iconfont": "icon-orgManage",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/interviewManage"
+    },
+    {
+      "id": "arp-hr-positive",
+      "name": "转正管理",
+      "iconfont": "icon-orgManage",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/positive"
+    },
+    {
+      "id": "arp-hr-staffMobility",
+      "name": "人员调动",
+      "iconfont": "icon-orgManage",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/staffMobility"
+    },
+    {
+      "id": "arp-hr-additional",
+      "name": "兼任管理",
+      "iconfont": "icon-orgManage",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/additional"
+    },
+    {
+      "id": "arp-hr-dimission",
+      "name": "离职管理",
+      "iconfont": "icon-orgManage",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/dimission"
+    },
+    {
+      "id": "arp-hr-laborContract",
+      "name": "劳动合同",
+      "iconfont": "icon-laborContract",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/laborContract"
+    },
+    {
+      "id": "arp-hr-assess",
+      "name": "绩效管理",
+      "iconfont": "icon-assess",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/assess"
+    },
+    {
+      "id": "arp-hr-party",
+      "name": "党组织管理",
+      "iconfont": "icon-party",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/party"
+    },
+    {
+      "id": "arp-hr-society",
+      "name": "工会管理",
+      "iconfont": "icon-society",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/society"
+    },
+    {
+      "id": "arp-hr-study",
+      "name": "继续教育",
+      "iconfont": "icon-study",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/study"
+    },
+    {
+      "id": "arp-hr-training",
+      "name": "培训管理",
+      "iconfont": "icon-training",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/training"
+    },
+    {
+      "id": "arp-hr-basic",
+      "name": "基础配置",
+      "iconfont": "icon-basic",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/basic"
+    },
+    {
+      "id": "arp-hr-form",
+      "name": "统计报表",
+      "iconfont": "icon-form",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/hr/form"
+    }
+  ]
+},
+{
+  "id": "arp-bm",
+  "name": "预算管理",
+  "iconfont": "icon-bm",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/bm",
+  "apps": [
+    {
+      "id": "arp-bm-projectBudget",
+      "name": "项目预算",
+      "iconfont": "icon-projectBudget",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/bm/projectBudget"
+    },
+    {
+      "id": "arp-bm-exeBudget",
+      "name": "核算账号",
+      "iconfont": "icon-exeBudget",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/bm/exeBudget"
+    },
+    {
+      "id": "arp-bm-deptBudget",
+      "name": "组织预算",
+      "iconfont": "icon-deptBudget",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/bm/deptBudget"
+    },
+    {
+      "id": "arp-bm-budgetCarryOver",
+      "name": "预算结转",
+      "iconfont": "icon-budgetCarryOver",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/bm/budgetCarryOver"
+    },
+    {
+      "id": "arp-bm-budgetAnalysis",
+      "name": "预算分析",
+      "iconfont": "icon-budgetAnalysis",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/bm/budgetAnalysis"
+    },
+    {
+      "id": "arp-bm-basic",
+      "name": "基础配置",
+      "iconfont": "icon-basic",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/bm/basic"
+    }
+  ]
+},
+{
+  "id": "arp-ss",
+  "name": "共享服务",
+  "iconfont": "icon-cms",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/ss",
+  "apps": [
+    {
+      "id": "arp-ss-literature",
+      "name": "文献情报资源",
+      "iconfont": "icon-literature",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/ss/literature"
+    },
+    {
+      "id": "arp-ss-Internet",
+      "name": "科技网服务",
+      "iconfont": "icon-Internet",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/ss/Internet"
+    },
+    {
+      "id": "arp-ss-learn",
+      "name": "网络学习平台",
+      "iconfont": "icon-literature",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/ss/learn"
+    }
+  ]
+},
+{
+  "id": "arp-statistic",
+  "name": "统计报表",
+  "iconfont": "icon-statistic",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/statistic",
+  "apps": [
+    {
+      "id": "arp-statistic-dept",
+      "name": "部门预算统计",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/statistic/dept"
+    },
+    {
+      "id": "arp-statistic-car",
+      "name": "项目统计",
+      "iconfont": "icon-car",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/statistic/project"
+    }
+  ]
+},
+{
+  "id": "arp-sys",
+  "name": "系统管理",
+  "iconfont": "icon-sys",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/sys",
+  "apps": [
+    {
+      "id": "arp-sys-app",
+      "name": "应用管理",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/sys/application"
+    },
+    {
+      "id": "arp-sys-parameter",
+      "name": "参数管理",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/sys/parameter"
+    },
+    {
+      "id": "arp-sys-account",
+      "name": "账户管理",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/sys/account"
+    },
+    {
+      "id": "arp-sys-monitor",
+      "name": "系统监控",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/sys/monitor"
+    },
+    {
+      "id": "arp-sys-workflow",
+      "name": "工作流管理",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/sys/workflow"
+    },
+    {
+      "id": "arp-sys-form",
+      "name": "报表管理",
+      "iconfont": "icon-form",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/sys/form"
+    }
+  ]
+},
+{
+  "id": "arp-userService",
+  "name": "用户服务",
+  "iconfont": "icon-cms",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/userService",
+  "apps": [
+    {
+      "id": "arp-oa-feedback",
+      "name": "问题反馈",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/userService/feedback"
+    }
+  ]
+}
+]

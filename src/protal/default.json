@@ -1,0 +1,112 @@
+{
+  "portalConfigJson": {
+    "leftDiv": {
+      "id": 1,
+      "data": [{
+        "id": 1,
+        "rowId": 1,
+        "name": "常用应用",
+        "type": "shortcut",
+        "notitle": true,
+        "switch": true,
+        "items": [{
+          "id": 1,
+          "title": "会议",
+          "path": "#/desk/work/25a28423bcae495f94560566561c4f85/coa/daliyMeeting/myDaliyMeeting/manage",
+          "icon": "img/desk/frota/wdrchy.png"
+        },{
+          "id": 2,
+          "title": "新闻",
+          "path": "#/desk/work/d8ded9a2dfe6477fa7af85ab645a75db/coa/conPub",
+          "icon": "img/desk/frota/xxfb.png"
+        },{
+          "id": 7,
+          "title": "用车",
+          "path": "#/desk/work/3c84b6d8a62947e1986c6c3fe3942012/car/useCar/",
+          "icon": "img/desk/frota/icon-frota-left-app7.png"
+        },{
+          "id": 8,
+          "title": "日程",
+          "path": "#/desk/calendar/myCal",
+          "icon": "img/desk/frota/icon-frota-left-app8.png"
+        }]
+      }, {
+        "id": 2,
+        "rowId": 1,
+        "name": "工作待办",
+        "notitle": true,
+        "switch": true,
+        "type": "diy",
+        "templateUrl": "desk/idunLayout/protal/tabs/daiban.html"
+      }, {
+        "id": 3,
+        "rowId": 1,
+        "name": "集成服务",
+        "type": "accessService",
+        "notitle": true,
+        "switch": true,
+        "items": [{
+          "id": 1,
+          "title": "团队文档库",
+          "path": "http://ddl.escience.cn/",
+          "icon": "img/desk/frota/wendang.png"
+        }, {
+          "id": 2,
+          "title": "文献情报中心",
+          "path": "http://www.las.ac.cn/",
+          "icon": "img/desk/frota/icon-draggable-service3.png"
+        },{
+          "id": 3,
+          "title": "护签系统",
+          "path": "http://172.31.0.15/sso?relayState=/ywgl/main/main.jsp",
+          "icon": "img/desk/frota/huzhao.png"
+        },{
+          "id": 4,
+          "title": "信息资源服务平台",
+          "path": "http://研究所arp2.4ip地址/irc2",
+          "icon": "img/desk/frota/huzhao.png"
+        }]
+      }]
+    },
+    "centerDiv": {
+      "id": 2,
+      "data": [{
+        "id": 1,
+        "rowId": 2,
+        "name": "页签模块",
+        "notitle": false,
+        "switch": true,
+        "type": "tabs",
+        "tabs": []
+      }]
+    },
+    "rightDiv": {
+      "id": 3,
+      "data": [{
+        "id": 1,
+        "rowId": 3,
+        "name": "天气预报",
+        "notitle": false,
+        "switch": true,
+        "type": "diy",
+        "templateUrl": "desk/idunLayout/protal/other/weather.html"
+      }, {
+        "id": 2,
+        "rowId": 3,
+        "name": "我的日程",
+        "notitle": true,
+        "switch": true,
+        "type": "diy",
+        "templateUrl": "desk/idunLayout/protal/other/myCalendar.html"
+      },{
+        "id": 3,
+        "rowId": 3,
+        "name": "会议室",
+        "notitle": true,
+        "switch": true,
+        "type": "diy",
+        "templateUrl": "desk/idunLayout/protal/other/meetRoom.html"
+      }]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 7,
+    "name": "新闻",
+    "iconfont": "icon-cms",
+    "bgColor": "#008287",
+    "appType": "file",
+    "url": "/cms/list"
+  },
+  {
+    "id": 3,
+    "name": "日程",
+    "iconfont": "icon-richeng",
+    "bgColor": "#b91d47",
+    "appType": "file",
+    "url": "/calendar"
+  },
+  {
+    "id": 4,
+    "name": "会议室",
+    "iconfont": "icon-meeting",
+    "bgColor": "#ffc40d",
+    "appType": "file",
+    "url": "/meeting/1"
+  },
+  {
+    "id": 9,
+    "name": "用车",
+    "iconfont": "icon-car",
+    "bgColor": "#2d89ef",
+    "appType": "file",
+    "url": "/car"
+  },
+  {
+    "id": 5,
+    "name": "财务",
+    "iconfont": "icon-finance",
+    "bgColor": "#9f00a7",
+    "appType": "file",
+    "url": "#"
+  },
+  {
+    "id": 6,
+    "name": "订餐",
+    "iconfont": "icon-dinner",
+    "bgColor": "#000000",
+    "appType": "file",
+    "url": "#"
+  },
+  {
+    "id": 1,
+    "name": "收文",
+    "iconfont": "icon-wenjian",
+    "bgColor": "#60a917",
+    "appType": "file",
+    "url": "#"
+  },
+  {
+    "id": 2,
+    "name": "签批件",
+    "iconfont": "icon-apply",
+    "bgColor": "#4390df",
+    "appType": "file",
+    "url": "#"
+  }
+]

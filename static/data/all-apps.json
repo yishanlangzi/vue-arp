@@ -1,0 +1,127 @@
+[{
+  "id": "arp-oa",
+  "name": "协同办公",
+  "iconfont": "icon-cms",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "/oa",
+  "apps": [
+    {
+      "id": "arp-oa-news",
+      "name": "新闻",
+      "iconfont": "icon-cms",
+      "bgColor": "#008287",
+      "appType": "file",
+      "url": "/cms/list"
+    },
+    {
+      "id": "arp-oa-calendar",
+      "name": "日程",
+      "iconfont": "icon-richeng",
+      "bgColor": "#b91d47",
+      "appType": "file",
+      "url": "/calendar"
+    },
+    {
+      "id": "arp-oa-meeting",
+      "name": "会议",
+      "iconfont": "icon-meeting",
+      "bgColor": "#ffc40d",
+      "appType": "file",
+      "url": "/meeting/1"
+    },
+    {
+      "id": "arp-oa-car",
+      "name": "用车",
+      "iconfont": "icon-car",
+      "bgColor": "#2d89ef",
+      "appType": "file",
+      "url": "/car"
+    }
+  ]
+},
+{
+  "id": "arp-fm",
+  "name": "财务管理",
+  "iconfont": "icon-apply",
+  "bgColor": "#008287",
+  "appType": "file",
+  "url": "#",
+  "apps": [
+    {
+      "id": "arp-fm-loan",
+      "name": "借款管理",
+      "iconfont": "icon-jiekuan",
+      "bgColor": "#eee",
+      "appType": "file",
+      "url": "#"
+    },
+    {
+      "id": "arp-fm-expense",
+      "name": "报销管理",
+      "iconfont": "icon-baoxiao",
+      "bgColor": "#eee",
+      "appType": "file",
+      "url": "#"
+    },
+    {
+      "id": "arp-fm-inCome",
+      "name": "收入管理",
+      "iconfont": "icon-shouru",
+      "bgColor": "#eee",
+      "appType": "file",
+      "url": "#"
+    },
+    {
+      "id": "arp-fm-config",
+      "name": "核算系统",
+      "iconfont": "icon-hesuan",
+      "bgColor": "#eee",
+      "appType": "file",
+      "url": "/#"
+    }
+  ]
+},
+{
+  "id": "arp-pmo",
+  "name": "科研项目",
+  "iconfont": "icon-apply",
+  "bgColor": "#eee",
+  "appType": "file",
+  "url": "#",
+  "apps": [
+    {
+      "id": "arp-pmo-prj",
+      "name": "项目库",
+      "iconfont": "icon-xiangmu",
+      "bgColor": "#eee",
+      "appType": "file",
+      "url": "#"
+    },
+    {
+      "id": "arp-pmo-guidePrj",
+      "name": "先导专项",
+      "iconfont": "icon-keyanxiangmu",
+      "bgColor": "#eee",
+      "appType": "file",
+      "url": "#"
+    },
+    {
+      "id": "arp-pmo-statisticalPrj",
+      "name": "统计报表",
+      "iconfont": "icon-baobiao",
+      "bgColor": "#eee",
+      "appType": "file",
+      "url": "#"
+    },
+    {
+      "id": "arp-pmo-projectReview",
+      "name": "评审管理",
+      "iconfont": "icon-pingshen",
+      "bgColor": "#eee",
+      "appType": "file",
+      "url": "#"
+    }
+  ]
+}
+]

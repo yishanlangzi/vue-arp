@@ -28,7 +28,7 @@
             <img src="http://172.17.0.106/seed/stoneVfs/local/common/staff/00/sm/537c1e64537ff9e5da12009f447a796e9b810ce4e3e26.jpg" /> 超级管理员
           </span>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item @click="goOther('/personal')">个人中心</el-dropdown-item>
+            <el-dropdown-item @click.native="goOther('/personal')">个人中心</el-dropdown-item>
             <el-dropdown-item>设置</el-dropdown-item>
             <el-dropdown-item divided @click.native="logout">退出登录</el-dropdown-item>
           </el-dropdown-menu>
@@ -95,7 +95,6 @@
         })
       },
       goOther (pathParam) {
-        this.is_slideShow = false
         this.$router.push({
           path: pathParam
         })

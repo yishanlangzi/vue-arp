@@ -4,21 +4,21 @@
       <toolbar></toolbar>
     </div>
     <div id="sw-draggable-main" >
-      <workSidebar></workSidebar>
+      <!--<workSidebar></workSidebar>-->
+      <router-view></router-view>
     </div>
-    <!--<router-view></router-view>-->
   </div>
 
 </template>
 
 <script>
   import toolbar from './components/Home.vue'
-  import workSidebar from './components/workSidebar.vue'
+//  import workSidebar from './components/workSidebar.vue'
 export default {
     name: 'app',
     components: {
-      toolbar: toolbar,
-      workSidebar: workSidebar
+      toolbar: toolbar
+//      workSidebar: workSidebar
     }
 }
 </script>

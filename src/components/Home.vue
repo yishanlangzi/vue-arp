@@ -41,7 +41,6 @@
 
 <script type="text/ecmascript-6">
   import toolbar from './toolbar.vue'
-
   export default {
     name: 'sdf',
     components: {
@@ -49,7 +48,7 @@
     },
     data () {
       return {
-        sysName: 'ARP信息管理系统',
+        sysName: '',
         collapsed: false,
         sysUserName: '',
         sysUserAvatar: '',
@@ -95,6 +94,7 @@
         })
       },
       goOther (pathParam) {
+//        alert('跳转')
         this.$router.push({
           path: pathParam
         })

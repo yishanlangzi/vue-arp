@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="personal-main">
       <div id="left">
         <div class="left_top">
           <div class="lefttopImg">
@@ -8,189 +8,197 @@
           <div class="lefttopText">超级管理员</div>
         </div>
         <div class="left_bottom">
-          <div class="select">
-            <div class="leftbottomImg"><img src="img/desk/sytleOne/per.png" alt="">
-              <div class="leftbottomText">个人信息</div>
-            </div>
-          </div>
-          <div class="select">
-            <div class="leftbottomImg"><img src="img/desk/sytleOne/lock.png" alt="">
-              <div class="leftbottomText">修改密码</div>
-            </div>
-          </div>
-          <div class="select">
-            <div class="leftbottomImg"><img src="img/desk/sytleOne/wendang.png" alt="">
-              <div class="leftbottomText">登陆日志</div>
-            </div>
-          </div>
+          <ul>
+            <li @click="bizCtrl.blockTOshow('personal')" class="leftbottomImg select"><img src="../img/desk/sytleOne/per.png" alt="">个人信息</li>
+            <li @click="bizCtrl.blockTOshow('password')" class="leftbottomImg"><img src="../img/desk/sytleOne/lock.png" alt="">修改密码</li>
+            <li @click="bizCtrl.blockTOshow('loginLog')" class="leftbottomImg"><img src="../img/desk/sytleOne/wendang.png" alt="">登陆日志</li>
+          </ul>
         </div>
       </div>
       <div id="right">
-        <div class="righttop"><h3>个人信息</h3></div>
+        <div class="righttop"><h4>个人信息</h4></div>
         <div class="rightbottom">
-          <div class="content" v-show="!infoShow">
-            <mt-field label="姓名：" v-model="personInfo.userName" readonly></mt-field>
-            <mt-field label="性别：" v-model="personInfo.sex" readonly></mt-field>
-
-            <mt-field label="手机号码：" type="number" v-model.lazy="personInfo.mobile">
-              <mt-switch v-model="personInfo.phoneEnabled">
-                <span v-show="personInfo.phoneEnabled==='true'">公开</span>
-                <span v-show="!personInfo.phoneEnabled==='false'">私密</span>
-              </mt-switch>
-            </mt-field>
-
-            <mt-field label="工作邮箱：" type="email" v-model.lazy="personInfo.emailWork" id="email"></mt-field>
-            <mt-field label="办公地址：" type="url" v-model="personInfo.officeAddr"></mt-field>
-            <mt-field label="座机号码：" type="number" v-model="personInfo.officeTel"></mt-field>
-            <mt-field label="部门：" type="text" v-model="personInfo.corpDeptName" readonly></mt-field>
-            <mt-field label="岗位：" type="text" v-model="personInfo.jobsId" readonly></mt-field>
-            <div class="footer">
-
-              <mt-button type="primary" size="large" @click="save()" class="saveBtn">保存</mt-button>
-            </div>
+          <div id="app">
+            <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+              <el-form-item label="活动名称" prop="name">
+                <el-input v-model="ruleForm.name"></el-input>
+              </el-form-item>
+              <el-form-item label="活动区域" prop="region">
+                <el-select v-model="ruleForm.region" placeholder="请选择活动区域">
+                  <el-option label="区域一" value="shanghai"></el-option>
+                  <el-option label="区域二" value="beijing"></el-option>
+                </el-select>
+              </el-form-item>
+              <el-form-item label="活动时间" required>
+                <el-col :span="11">
+                  <el-form-item prop="date1">
+                    <el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
+                  </el-form-item>
+                </el-col>
+                <el-col class="line" :span="2">-</el-col>
+                <el-col :span="11">
+                  <el-form-item prop="date2">
+                    <el-time-picker type="fixed-time" placeholder="选择时间" v-model="ruleForm.date2" style="width: 100%;"></el-time-picker>
+                  </el-form-item>
+                </el-col>
+              </el-form-item>
+              <el-form-item label="即时配送" prop="delivery">
+                <el-switch on-text="" off-text v-model="ruleForm.delivery"></el-switch>
+              </el-form-item>
+              <el-form-item label="活动性质" prop="type">
+                <el-checkbox-group v-model="ruleForm.type">
+                  <el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
+                  <el-checkbox label="地推活动" name="type"></el-checkbox>
+                  <el-checkbox label="线下主题活动" name="type"></el-checkbox>
+                  <el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
+                </el-checkbox-group>
+              </el-form-item>
+              <el-form-item label="特殊资源" prop="resource">
+                <el-radio-group v-model="ruleForm.resource">
+                  <el-radio label="线上品牌商赞助"></el-radio>
+                  <el-radio label="线下场地免费"></el-radio>
+                </el-radio-group>
+              </el-form-item>
+              <el-form-item label="活动形式" prop="desc">
+                <el-input type="textarea" v-model="ruleForm.desc"></el-input>
+              </el-form-item>
+              <el-form-item>
+                <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
+                <el-button @click="resetForm('ruleForm')">重置</el-button>
+              </el-form-item>
+            </el-form>
           </div>
         </div>
       </div>
     </div>
 </template>
 <script>
-    // import { MessageBox } from 'mint-ui'
-//    import $Name$ from '$Route$'
-
-    export default {
+  import Vue from 'vue'
+  export default {
+    let Main = {
       data () {
         return {
-          personInfo: {
-            gender: ''
+          ruleForm: {
+            name: '',
+            region: '',
+            date1: '',
+            date2: '',
+            delivery: false,
+            type: [],
+            resource: '',
+            desc: ''
           },
-          infoShow: true,
-          sex: true,
-          value: true,
-          emailtest: '',
-          teltest: ''
-        }
-      },
-      mounted () {
-        this.queryInfo()
-      },
-      computed: {
-        pokerHistory () {
-          return this.personInfo.emailWork
-        },
-        telNumber () {
-          return this.personInfo.mobile
-        }
-      },
-      watch: {
-        pokerHistory (newValue, oldValue) {
-          this.emailWorkTest(newValue)
-        },
-        telNumber (newValue, oldValue) {
-          this.mobileTest(newValue)
-          console.log(newValue)
+          rules: {
+            name: [
+              { required: true, message: '请输入活动名称', trigger: 'blur' },
+              { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+            ],
+            region: [
+              { required: true, message: '请选择活动区域', trigger: 'change' }
+            ],
+            date1: [
+              { type: 'date', required: true, message: '请选择日期', trigger: 'change' }
+            ],
+            date2: [
+              { type: 'date', required: true, message: '请选择时间', trigger: 'change' }
+            ],
+            type: [
+              { type: 'array', required: true, message: '请至少选择一个活动性质', trigger: 'change' }
+            ],
+            resource: [
+              { required: true, message: '请选择活动资源', trigger: 'change' }
+            ],
+            desc: [
+              { required: true, message: '请填写活动形式', trigger: 'blur' }
+            ]
+          }
         }
       },
       methods: {
-        goBack () {
-          this.$router.go(-1)
+        submitForm (formName) {
+          this.$refs[formName].validate((valid) => {
+            if (valid) {
+              alert('submit!')
+            } else {
+              console.log('error submit!!')
+              return false
+            }
+          })
         },
-        change () {
-          this.infoShow = false
-        },
-//        cancel () {
-//          queryStaffInfo().then(data => {
-//            if (data.gender === 'M') {
-//              data.sex = '男'
-//            } else {
-//              data.sex = '女'
-//            }
-//            this.personInfo = data
-//          })
-//          this.infoShow = true
-//        },
-        save () {
-          if (!this.teltest) {
-            alert('请您填写正确的手机号码')
-          } else if (!this.emailtest) {
-            alert('请您填写正确的邮箱')
-          } else {
-//            let staff = this.personInfo
-//            updateStaff(staff).then(data => {
-//              alert('操作成功').then(action => {
-//                this.infoShow = true
-//              })
-//            })
-          }
-        },
-//        queryInfo () {
-//          queryStaffInfo().then(data => {
-//            if (data.gender === 'M') {
-//              data.sex = '男'
-//            } else {
-//              data.sex = '女'
-//            }
-//            this.personInfo = data
-//          })
-//        },
-        mobileTest (mobile) {
-          let telTest = /^[1][34578][0-9]{9}$/
-          if (telTest.test(mobile)) {
-            this.teltest = true
-          } else if (!telTest.test(mobile)) {
-            this.teltest = false
-          }
-        },
-        emailWorkTest (email) {
-          let pattern = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/
-          if (pattern.test(email)) {
-            this.emailtest = true
-          } else {
-            this.emailtest = false
-          }
+        resetForm (formName) {
+          this.$refs[formName].resetFields()
         }
-      },
-      created () {
-      },
-      components: {
       }
     }
+    var Ctor = Vue.extend(Main)
+    new Ctor().$mount('#app')
+  }
 </script>
 <style lang="scss" scoped>
-  .infoTitle {
-    text-align: left;
-    font-weight: 600;
-    color: #333;
+  @import url("//unpkg.com/element-ui@1.4.4/lib/theme-default/index.css");
+  #personal-main{
+    margin: 10px 300px;
+    #left{
+      float: left;
+      width: 200px;
+      height:800px;
+      background-color: #ffffff;
+      margin-right: 20px;
+      .lefttopImg{
+        margin: 20px 40px;
+        display: block;
+        width: 120px;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 100%;
+        background-color: whitesmoke;
+        position: relative;
+      }
+      .left_bottom{
+        margin-top: 20px;
+        ul{
+          padding:0;
+          .select{
+            background-color: whitesmoke;
+            border: none;
+          }
+          .leftbottomImg{
+            list-style: none;
+            height: 44px;
+            line-height: 44px;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            img{
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    #right{
+      width: 796px;
+      height: calc(100% - 20px);
+      background: #fff;
+      border: 1px solid #ddd;
+      float: left;
+      overflow: hidden;
+      .righttop{
+        width: 100%;
+        height: 44px;
+        border-bottom: 1px solid #eaeaea;
+        h4{
+          font-size: 16px;
+          line-height: 34px;
+          margin-left: 20px;
+          font-weight: 600;
+          color: #333;
+        }
+      }
+      .rightbottom{
+        overflow-y: auto;
+      }
+    }
   }
-  .footer {
-    border-top: 1px solid #d9d9d9;
-    padding: 15px 0px;
 
-  }
-  .sex {
-    height: 48px;
-    width: 100%;
-    padding: 0px 10px;
-    border-top: 1px solid #d9d9d9;
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    font-size: 16px;
-    line-height: 1;
-    min-height: inherit;
-    overflow: hidden;
-    padding: 0 10px;
-    width: 100%;
-  }
-  .radio {
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    margin: -1px 4px 0 0;
-    vertical-align: middle;
-    cursor: pointer;
-  }
-  .saveBtn {
-    width: 70%;
-    margin-left: 14%;
-  }
 </style>

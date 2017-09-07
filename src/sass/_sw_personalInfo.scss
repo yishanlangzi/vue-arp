@@ -1,0 +1,245 @@
+/*左侧小图标*/
+.sw-coa-personal-con-left {
+    .sw-left-icon {
+        margin-bottom: 3px;
+    }
+}
+/*登录日志设置样式*/
+.sw-personal {
+    .sw-data-table {
+        margin-top: 0;
+
+        .panel-default {
+            border: none;
+        }
+
+        .panel {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    .sw-coa-personal {
+        overflow: auto;
+        height: 100%;
+    }
+}
+/*右侧样式调整*/
+.sw-personal-right-style {
+    .row {
+        margin-left: -35px;
+        overflow: hidden;
+
+        .form-group {
+            margin-bottom: 25px;
+
+            .sw-coa-personal-control {
+                width: 291px;
+                height: 36px;
+                position: relative;
+            }
+
+            .sw-coa-personal-control1 {
+                width: 220px;
+                float: left;
+            }
+            //个人中心手机号公开私密按钮样式
+            .has-feedback1 {
+                position: relative;
+
+                .cancel-open {
+                    position: absolute;
+                    top: 4px;
+                    right: -47px;
+                    margin: 0;
+
+                    .sw-switch1 {
+                        width: 65px;
+                        height: 25px;
+                        background: #f0f0f0;
+                        border-color: #dfdfdf;
+
+                        small {
+                            width: 25px;
+                            height: 25px;
+                        }
+
+                        .on {
+                            top: -5%;
+                            padding-right: 27px;
+                        }
+
+                        .off {
+                            top: -5%;
+                            color: #777;
+                            padding-left: 27px;
+                        }
+                    }
+
+                    .sw-switch1.checked {
+                        background: limegreen;
+
+                        small {
+                            left: 40px;
+                        }
+                    }
+                }
+            }
+            //          .has-feedback .sw-col-error-icon{
+            //              position: absolute;
+            //              top: 50%;
+            //              right: 0;
+            //          }
+            .yzm {
+                input {
+                    height: 34px;
+                    width: 118px;
+                    margin-right: 10px;
+                    float: left;
+                }
+
+                img {
+                    float: left;
+                    margin-top: 2px;
+                }
+            }
+
+            .checkbox2 {
+                position: relative;
+                display: block;
+                margin-top: 0;
+                margin-bottom: -6px;
+            }
+        }
+    }
+}
+//wangms 2016-12-8
+
+.sw-coa-personal {
+    height: 100%;
+
+    .sw-coa-personal-con {
+        &.sw-coa-personalCon {
+            padding-top: 20px;
+            margin: 0 auto;
+            height: 100%;
+
+            .sw-coa-personal-picture {
+                ul > li > a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 100%;
+                    background-color: whitesmoke;
+                    position: relative;
+
+                    img {
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+            }
+
+            .sw-personal-nav {
+                li.selected {
+                    background-color: whitesmoke;
+                    border: none;
+                }
+            }
+
+            .sw-coa-personal-con-right {
+                .sw-forms {
+                    height: calc(100% - 44px);
+                    overflow: auto;
+                }
+
+                .sw-coa-personal-con-right-ul {
+                    .sw-data-tabcont-inform-right3 {
+                        width: 100%;
+                        height: auto;
+                        margin-top: 42px;
+                        border-top: 1px solid #ddd;
+                        padding: 20px 20px 20px 0;
+                        position: relative;
+
+                        .sw-data-tabcont-limit1 {
+                            position: absolute;
+                            top: -12px;
+                            background: #fff;
+                            display: inline-block;
+                            left: 0;
+                        }
+
+                        .sw-data-tabcont-limit3 {
+                            .sw-data-tabcont-time {
+                                float: left;
+                                line-height: 32px;
+                            }
+
+                            .ng-untouched2 {
+                                width: 130px;
+                                height: 36px;
+                                border-radius: 0;
+                                border: 1px solid #ebebeb;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                                padding: 6px 10px;
+                                background-color: #eeeeee;
+                                float: left;
+                            }
+
+                            .ng-untouched2:focus {
+                                border-color: #0181e4;
+                            }
+
+                            .sw-left-icon1 {
+                                margin-left: 10px;
+                                margin-top: 6px;
+                            }
+                        }
+                    }
+                }
+
+                .sw-data-tabcont-limit2 {
+                    .sw-data-tabcont-time1 {
+                        line-height: 30px;
+                    }
+
+                    .switch-text {
+                        font-size: 14px;
+                        display: block;
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        border-radius: 15px;
+                        position: relative;
+                        z-index: 0;
+                        overflow: hidden;
+                        text-align: center;
+                    }
+
+                    // .sw-switch {
+                    //     height: 26px !important;
+                    //
+                    //     small {
+                    //         width: 26px;
+                    //         height: 26px;
+                    //         left: 0 !important;
+                    //     }
+                    // }
+
+                    .sw-data-tabcont-limit33 {
+                        width: 14%;
+                    }
+                    // .sw-switch.checked small  {
+                    //     left: calc(100% - 26px)!important;
+                    // }
+                }
+
+
+            }
+        }
+    }
+}

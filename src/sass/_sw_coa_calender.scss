@@ -1,0 +1,653 @@
+// 日程管理样式
+
+.sw-coa-calender {
+    padding: 20px;
+
+    .sw-coa-message-tab {
+        // overflow-y: scroll;
+        // height: calc(100vh - 110px);
+        background: #fff;
+        position: relative;
+        border-radius: 3px;
+        // 切换
+        .nav-tabs {
+            border-bottom: 0;
+
+//          li {         //用li影响到其他元素
+//              margin-left: 20px;
+//          }
+            .nav-item{
+                margin-left: 20px;
+            }
+        }
+
+        .nav-tabs > li.active > a {
+            border: 0 !important;
+            border-bottom: 2px solid #0181e4 !important;
+            height: 47px;
+            line-height: 26px;
+        }
+
+        .nav-tabs > li > a {
+            line-height: 26px;
+            border-radius: 0;
+            background: #fff;
+            border: 0;
+        }
+        // 切换
+        .shCalendar-row {
+            border-bottom: 1px solid #ddd;
+            height: 47px;
+            padding: 0 20px;
+            margin-left: 0;
+            margin-right: 0;
+
+            .sw-coa-shCalendar-row {
+                width: 600px;
+                margin: 0 auto;
+
+                [class^="col-"] {
+                    margin-top: 10px;
+                }
+
+                .sw-coa-shCalendar-center1 {
+                    text-align: right;
+                }
+
+                .sw-coa-shCalendar-center2 {
+                    text-align: left;
+                }
+
+                .input-group {
+                    width: 268px;
+                    height: 30px;
+
+                    .form-control:first-child {
+                        border-radius: 0;
+                        margin-top: -4px;
+                        background: #f7f7f7;
+                        box-shadow: none;
+                        border: 1px solid #eaeaea;
+                        height: 34px;
+                        border-right: 0;
+                    }
+
+                    .input-group-btn:last-child > .btn {
+                        border-radius: 0;
+                        margin-top: -4px;
+                        background: #f7f7f7;
+                        border: 1px solid #eaeaea;
+                        height: 34px;
+                        border-left: 0;
+
+                        i {
+                            color: #777;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sw-coa-calende-btns {
+            width: 174px;
+            height: 34px;
+            float: right;
+            margin-top: 7px;
+            margin-right: 10px;
+            position: relative;
+
+            .sw-header-msg{
+              display: block;
+             height: 16px;
+             line-height: 16px;
+             font-size: 12px;
+             text-align: center;
+             background: #ff6600;
+             color: #fff;
+             padding: 0 5px;
+             border-radius: 10px;
+             position: absolute;
+             top: -8px;
+             right: -2px;
+            }
+
+            .sw-coa-calender-btn {
+                text-align: right;
+                border: 1px solid #0081e4;
+                color: #0081e4;
+
+                a {
+                    color: #0081e4;
+                }
+            }
+
+            .sw-coa-calender-btn:hover {
+                background: #0081e4;
+                color: #fff;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .nav-link {
+            color: #333;
+        }
+
+        .btn-link {
+            color: #aeaeae;
+        }
+
+        .sw-coa-center {
+            text-align: center;
+        }
+        // 我的日历
+        .sw-coa-group-message-col {
+            padding: 20px;
+            box-sizing: border-box;
+
+            .sw-coa-myCalenda-table {
+                //width: 98%;
+                width: 100%;
+
+                thead {
+                    .text-center {
+                        background: #f7f7f7;
+                        text-align: center;
+                        border-bottom: 0;
+                    }
+                }
+
+                .sw-coa-myCalenda-tables {
+
+                    tr > td {
+                        overflow: hidden;
+                        position: relative;   //影响日程区域部分样式
+                        cursor: pointer;
+                        box-sizing: border-box;
+
+                        .sw-coa-myCalendar-btn-more {
+                            display: inline-block;
+                            margin-bottom: 0;
+                            font-weight: normal;
+                            text-align: center;
+                            vertical-align: middle;
+                            touch-action: manipulation;
+                            cursor: pointer;
+                            background-image: none;
+                            border: 1px solid transparent;
+                            white-space: nowrap;
+                            padding: 6px;
+                            box-sizing: border-box;
+                            font-size: 14px;
+                            line-height: 1.42857;
+                            border-radius: 4px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            float: right;
+                            color: #777;
+                            position: absolute;
+                            top: -5px;
+                            right: 10px;
+                            display: block;
+
+                            i {
+                                z-index: 999;
+                            }
+                        }
+
+                        .sw-coa-myCalendar-btn-more:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    .sw-coa-myCalenda-table-calslist {
+                        .sw-coa-shCalenda-btn-box{
+                            height: 20px;
+                        }
+                        .sw-coa-red {
+                            width: 100%;
+
+                            .sw-coa-red-title {
+                                display: block;
+                                //display: inline-block;
+                                width: calc(100% - 40px);
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        .sw-coa-schedule {
+                            height: 60px;
+                            overflow: hidden;
+                        }
+
+                        .sw-coa-shCalenda-denote {
+                            width: 2px;
+                            height: 11px;
+                            background: #ff8a00;
+                            display: inline-block;
+                            float: left;
+                            margin-right: 10px;
+                            margin-top: 3px;
+                        }
+
+                        .sw-coa-shCalenda-private {
+                            width: 2px;
+                            height: 14px;
+                            background: #999;
+                            display: inline-block;
+                            float: left;
+                            margin-right: 10px;
+                            margin-top: 3px;
+                        }
+
+                        .myCalenda-table-calslist-name {
+                            .sw-coa-portrait {
+                                width: 28px;
+                                height: 28px;
+                                background: #ccc;
+                                border-radius: 100%;
+                                display: block;
+                                margin: 6px auto;
+                                overflow: hidden;
+
+                                img {
+                                    width: 28px;
+                                    height: 28px;
+                                    border-radius: 100%;
+                                }
+                            }
+
+                            i {
+                                font-style: normal;
+                                width: 75px;
+                                //height: 12px;
+                                margin: 0 auto;
+                                display: block;
+                                text-align: center;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+
+                        .sw-coa-red {
+                            width: 100%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            margin-bottom: 3px;
+                            font-size: 12px;
+                            position: relative;
+                            z-index: 1;
+                            cursor: pointer;
+                            float: left;
+                            position: relative;
+                            display: inline-block;
+
+                            .sw-coa-trash-opr {
+                                border: 0;
+                                background: 0;
+                                position: absolute;
+                                top: 1px;
+                                right: 0;
+                                z-index: 999;
+                                display: none;
+                                font-size: 14px;
+                            }
+                        }
+
+                        .sw-coa-red1 {
+                            width: 100%;
+                        }
+
+                        .sw-coa-red:hover {
+                            background: #eaeaea;
+
+                            .sw-coa-trash-opr {
+                                display: block;
+                                color: #777;
+                            }
+
+                            .sw-coa-trash-opr:hover {
+                                color: #0081e4;
+                            }
+                        }
+
+                        .sw-coa-myCalendar-btn-more:hover {
+                            text-decoration: none;
+                        }
+
+                        .myCalenda-btn-box {
+                            float: right;
+                            color: #777;
+
+                            .sw-coa-myCalendar-btn-more {
+                                font-size: 20px;
+                            }
+                        }
+
+                        .sw-coa-myCalenda-current {
+                            width: 30px;
+                            height: 30px;
+                            background: #0081e4;
+                            border-radius: 50px;
+                            padding: 6px 7px;
+                            color: #fff;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+        // 我的日程
+    }
+    // 共享日程
+    .sw-coa-group-message-col-left {
+        width: calc(100% - 210px);
+        float: left;
+        box-sizing: border-box;
+        height: 100%;
+        overflow: auto;
+
+        .sw-coa-myCalenda-table {
+            thead {
+                th {
+                    height: 37px;
+                    background: #f7f7f7;
+                    text-align: center;
+                    border-bottom: 0;
+
+                    .sw-coa-date {
+                        font-size: 12px;
+                        color: #777;
+                    }
+                }
+            }
+        }
+        .sw-coa-shareCalendar-tables {
+            tr > td:first-child{
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .group-message-col-right {
+        background: #f7f7f7;
+        padding: 0;
+        width: 210px;
+        float: right;
+        height: 100%;
+
+        .right-header-select {
+            margin: 5px 20px auto;
+        }
+
+        .sw-down {
+            width: 100%;
+            height: 30px;
+            background: #f7f7f7;
+            border-color: #ddd;
+            padding: 3px;
+        }
+
+        .sw-down:hover {
+            background: #fff;
+        }
+
+        .group-message-col-switch {
+            border-bottom: 1px solid #ddd;
+            height: 193px;
+            margin-top: 20px;
+
+            .right-header {
+                background: #f7f7f7;
+                cursor: pointer;
+
+                .left-con {
+                    margin-left: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            .right-header:active,
+            .right-header:hover,
+            .right-header:hover,
+            .right-header:visited {
+                background: #dfdfdf;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .shareSelect {
+                background: #dfdfdf;
+                //border-bottom: 1px solid #ddd;
+            }
+        }
+
+        .sw-sidebar-addressbook {
+            .form-search {
+                display: block;
+                position: relative;
+                margin: 10px 20px;
+
+                .input-medium {
+                    width: 100%;
+                    border-radius: 34px;
+                    box-shadow: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    position: relative;
+                    box-sizing: border-box;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .sw-search {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    color: #a3a3a3;
+                    z-index: 2;
+                }
+            }
+        }
+
+        .sw-member {
+            padding-bottom: 10px;
+            height: calc(100% - 267px);
+            overflow: auto;
+            box-sizing: border-box;
+
+            ul {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+
+                li {
+                    height: 44px;
+                    line-height: 38px;
+                    cursor: pointer;
+                    padding-left: 20px;
+                    position: relative;
+
+                    .sw-ico-lord {
+                        margin-top: 13px;
+                        float: left;
+                        width: 16px;
+                        height: 12px;
+                    }
+
+                    .word-list {
+                        width: 130px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        -o-text-overflow: ellipsis;
+                        overflow: hidden;
+                        float: left;
+                        overflow: hidden;
+
+                        span {
+                            display: block;
+                            max-width: 75px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            float: left;
+                        }
+
+                        .ico-men-pic {
+                            width: 28px;
+                            height: 28px;
+                            float: left;
+                            border-radius: 100%;
+                            margin-top: 8px;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .glyphicon-ok1 {
+                        float: right;
+                        color: #777;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+                }
+
+                li:hover {
+                    background: #dfdfdf;
+                }
+            }
+        }
+    }
+    // 共享日程
+}
+//wangms 2016-12-6
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.sw-coa-calender {
+    height: 100%;
+
+    .sw-maincont {
+        height: 100%;
+    }
+
+    .sw-coaCalender-tab {
+        height: 100%;
+
+        .tab-content {
+            height: calc(100% - 50px);
+            overflow: auto;
+
+            .tab-pane {
+                height: 100%;
+            }
+
+            .myCalenda-btn-box {
+                height: 100px;
+                //height: 110px;
+                overflow: hidden;
+            }
+
+            .sw-coa-calender1 {
+                width: 100%;
+                height: 100%;
+
+                .sw-shareCalendaar-content {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    //@extend .clearfloat;
+                }
+
+                table {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+//wangms 2016-12-12
+//日程没有数据的状态
+
+.sw-noData-well {
+    min-height: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    border: 1px solid #ebebeb;
+    background: #f7f7f7;
+    margin-top: 20px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    //@extend .clearfloat;
+
+    em {
+        display: inline-block;
+        vertical-align: middle;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .no-data {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        color: orange;
+        font-weight: bold;
+        font-size: 16px;
+        border: 2px solid orange;
+        border-radius: 100%;
+        vertical-align: middle;
+        font-family: "微软雅黑","Microsoft yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+    }
+}
+
+//hm  2016-12-14 按钮更换样式
+.sw-form-group{
+    .sw-coa-myCal-editorSwitch{
+        .sw-switch{
+            width: 48px;
+            height: 20px;
+            background: #f0f0f0;
+            top: 8px;
+            small{
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: 0;
+            }
+            .on{
+                top: -16%;
+                left: 10%;
+                color: #FFFFFF;
+            }
+            .off{
+                color: #A9A9A9;
+                top: -16%;
+                left: -9%;
+                }
+
+        }
+        .sw-switch.checked{
+            background: #0081e6;
+            small{
+                left: 29px;
+            }
+        }
+    }
+}

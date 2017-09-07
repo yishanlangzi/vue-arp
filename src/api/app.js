@@ -3,6 +3,7 @@ import axios from 'http'
 // import { calPrefix } from './cal'
 // import { cmsPrefix } from './news'
 import { staticPrefix } from '../config'
+//  ceshi
 // 公共类型配置
 export const seedPrefix = 'seed/api'
 // 首页接口
